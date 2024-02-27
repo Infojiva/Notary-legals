@@ -1,0 +1,330 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 20px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: white;
+}
+
+.email,
+.phone {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    /* Set background color */
+}
+
+.logo img {
+    max-width: 100%;
+    /* Set maximum width to 100% */
+    max-height: 150px;
+    /* Set maximum height as needed */
+    margin-top: auto;
+}
+
+.header-container p {
+    background-color: orangered;
+    color: black;
+    border-radius: 20px;
+    height: 50px;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: whitesmoke;
+    background-color: blue;
+}
+
+section h2 {
+    padding: 20px;
+    color: blue;
+    margin-bottom: 50px;
+}
+
+section p {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 60%;
+    /* Adjust the maximum width as needed */
+    @keyframes disappear {
+        50% {
+            text-shadow: 0 0 40px #cbc7c7;
+        }
+        to {
+            text-shadow: 0 0 20px #cbc7c7;
+            opacity: 0;
+        }
+    }
+}
+
+.section-container {
+    display: flex;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contain-1,
+.contain-2 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 10px;
+    margin-left: 50px;
+    /* Add a margin-bottom to create a gap between cards */
+    border: black;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #3498db;
+    /* Change this to your desired blue color */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 500px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav ul li ul.submenu {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: auto;
+    text-align: left;
+    background: rgb(215, 180, 247);
+    transition: .5s;
+    z-index: 0;
+    >li {
+        padding: 10px 10px;
+    }
+    >li:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: flex;
+}
+
+ul li:hover>ul.submenu {
+    z-index: 1000;
+    width: 250px;
+    height: 250px;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 70%;
+    left: 1%;
+    z-index: 100;
+    color: blue;
+    /* Adjust color as needed */
+    font-size: 30px;
+    /* Adjust font size as needed */
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+}
+
+.consultationButton {
+    background-color: #5c14ec;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    color: white;
+    z-index: 200;
+    border-radius: 20px;
+    height: 50px;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    a {
+        color: white;
+    }
+}
+
+.rectangle {
+    width: 300px;
+    /* Width of the rectangle */
+    height: 500px;
+    /* Height of the rectangle */
+    background-color: #5c14ec;
+    /* Background color of the rectangle */
+    color: #fff;
+    /* Text color */
+    padding: 20px;
+    /* Padding inside the rectangle */
+    border-radius: 10px;
+    /* Border radius to make the corners rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Box shadow for a slight depth effect */
+    line-height: 50px;
+    /* Center text vertically (adjust as needed) */
+}
+
+.services {
+    h2 {
+        text-align: center;
+    }
+    padding: 10px;
+}
+
+.serviceContainer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    h3 {
+        text-decoration: underline;
+        text-align: center;
+    }
+}
